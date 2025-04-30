@@ -1,11 +1,11 @@
-body {
+/* body {
+	cursor: url("images/test-cursor.png"), auto;
 	margin: 0;
 	font-family: "Cinzel Decorative", cursive;
 	background-color: #1a1814;
 	color: #d9c9a1;
 	line-height: 1.6;
 }
-
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -46,14 +46,14 @@ body {
 
 .hero h1 {
 	font-size: 3.5rem;
-	margin: 0.5rem 0; /* Simplified */
+	margin: 0.5rem 0; 
 	text-align: center;
 }
 
 .hero h1,
 .hero span,
 .hero p {
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added for readability */
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
 }
 
 .hero span {
@@ -217,7 +217,7 @@ body {
 	font-weight: bold;
 	box-shadow: 0 0 10px #b5838d;
 	cursor: pointer;
-	transition: box-shadow 0.3s; /* Updated */
+	transition: box-shadow 0.3s; 
 }
 
 .signup button:hover {
@@ -257,13 +257,19 @@ footer nav a {
 footer nav a:hover {
 	color: #fff;
 }
-
-/* body {
+ */
+body {
+	cursor: url("images/oblivion-cursor.png"), auto;
 	margin: 0;
 	font-family: "Cinzel Decorative", cursive;
 	background-color: #1a1814;
 	color: #d9c9a1;
 	line-height: 1.6;
+}
+
+a,
+button {
+	cursor: url("images/oblivion-cursor.png"), pointer;
 }
 
 .container {
@@ -306,15 +312,21 @@ footer nav a:hover {
 
 .hero h1 {
 	font-size: 3.5rem;
-	margin: 0.5rem 0; 
+	margin: 0.5rem 0;
 	text-align: center;
 }
 
+.hero h1,
+.hero span,
+.hero p {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .hero span {
-	display: block; 
+	display: block;
 	font-weight: bold;
 	text-align: center;
-	font-size: 1.5rem; 
+	font-size: 1.5rem;
 	margin: 0.5rem 0 0.2rem 0;
 }
 
@@ -351,6 +363,11 @@ footer nav a:hover {
 	}
 	.hero h1 {
 		font-size: 2.5rem;
+		margin: 0.3rem 0;
+	}
+	.hero span {
+		font-size: 1.2rem;
+		margin: 0.3rem 0 0.1rem 0;
 	}
 	.hero p {
 		font-size: 1rem;
@@ -465,8 +482,7 @@ footer nav a:hover {
 	color: #fff;
 	font-weight: bold;
 	box-shadow: 0 0 10px #b5838d;
-	cursor: pointer;
-	transition: background 0.3s;
+	transition: box-shadow 0.3s;
 }
 
 .signup button:hover {
@@ -505,4 +521,4 @@ footer nav a {
 
 footer nav a:hover {
 	color: #fff;
-} */
+}
