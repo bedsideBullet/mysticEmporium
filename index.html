@@ -11,21 +11,21 @@
 			href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" type="image/x-icon" href="./images/logofilled.png" />
+		<link rel="icon" type="image/x-icon" href="images/logofilled.png" />
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
 		<header class="hero">
 			<div class="container">
 				<div class="hero-img">
-					<img src="./images/logoempty.svg" alt="logo" />
+					<img src="images/logoempty.svg" alt="Mystic Emporium logo" />
 				</div>
 				<div class="hero-text">
 					<h1>Welcome</h1>
-
 					<span>to the</span>
-					<h1 class="welcome">Mystic emporium</h1>
+					<h1 class="welcome">Mystic Emporium</h1>
 					<p>
 						Arcane curios, enchanted artifacts, and alchemical secrets await.
 					</p>
@@ -34,120 +34,111 @@
 			</div>
 		</header>
 
-		<section class="about">
-			<div class="container">
-				<h2>Discover Calindil’s Curios</h2>
-				<p>
-					Run by Calindil, the High Elf enchanter, our Emporium in the Imperial
-					City Market District offers scrolls, soul gems, and exclusive magic
-					items—from Feather Shoes to the famed Hands of the Atronach.
-				</p>
-				<img
-					src="images/mystic-emporium.jpg"
-					alt="Interior of the Mystic Emporium"
-				/>
-			</div>
-		</section>
+		<main id="main-content">
+			<section class="about">
+				<div class="container">
+					<h2>Discover Calindil’s Curios</h2>
+					<p>
+						Run by Calindil, the High Elf enchanter, our Emporium in the
+						Imperial City Market District offers scrolls, soul gems, and
+						exclusive magic items—from Feather Shoes to the famed Hands of the
+						Atronach.
+					</p>
+					<img
+						src="images/mystic-emporium.jpg"
+						alt="Interior of the Mystic Emporium"
+					/>
+				</div>
+			</section>
 
-		<section class="products">
-			<div class="container">
-				<h2>Signature Artifacts</h2>
-				<div class="product-grid">
-					<div class="product-card">
-						<img src="images/HoA.png" alt="Hands of the Atronach" />
-						<h3>Hands of the Atronach</h3>
-						<p>Grants spell absorption at the cost of Magicka regeneration.</p>
-					</div>
-					<div class="product-card">
-						<img src="images/FeatherShoes.png" alt="Feather Shoes" />
-						<h3>Feather Shoes</h3>
-						<p>Enhances jumping ability with a whisper-light step.</p>
-					</div>
-					<div class="product-card">
-						<img src="images/fatiguePants.png" alt="Fortify Fatigue Pants" />
-						<h3>Fortify Fatigue Pants</h3>
-						<p>Boosts your endurance in the heat of battle.</p>
+			<section class="products">
+				<div class="container">
+					<h2>Signature Artifacts</h2>
+					<div class="product-grid">
+						<div class="product-card">
+							<img src="images/HoA.png" alt="Hands of the Atronach" />
+							<h3>Hands of the Atronach</h3>
+							<p>
+								Grants spell absorption at the cost of Magicka regeneration.
+							</p>
+						</div>
+						<div class="product-card">
+							<img src="images/FeatherShoes.png" alt="Feather Shoes" />
+							<h3>Feather Shoes</h3>
+							<p>Enhances jumping ability with a whisper-light step.</p>
+						</div>
+						<div class="product-card">
+							<img src="images/fatiguePants.png" alt="Fortify Fatigue Pants" />
+							<h3>Fortify Fatigue Pants</h3>
+							<p>Boosts your endurance in the heat of battle.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="quest-upgrades">
-			<div class="container">
-				<h2>Frostcrag Spire Essentials</h2>
-				<p>
-					Visit Aurelinwae upstairs for all your Frostcrag Spire expansion
-					needs—alchemy labs, library wings, and enchanted Magetallow candles.
-				</p>
-				<ul>
-					<li>Frostcrag Alchemy Lab</li>
-					<li>Library Area</li>
-					<li>Magetallow Candles</li>
-				</ul>
-			</div>
-		</section>
+			<section class="quest-upgrades">
+				<div class="container">
+					<h2>Frostcrag Spire Essentials</h2>
+					<p>
+						Visit Aurelinwae upstairs for all your Frostcrag Spire expansion
+						needs—alchemy labs, library wings, and enchanted Magetallow candles.
+					</p>
+					<ul>
+						<li>Frostcrag Alchemy Lab</li>
+						<li>Library Area</li>
+						<li>Magetallow Candles</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- <section class="signup" id="signup">
-			<div class="container">
-				<h2>Receive Exclusive Arcane Deals</h2>
-				<p>
-					Subscribe now and get a coupon for <strong>25% off</strong> your first
-					purchase of rare scrolls or soul gems.
-				</p>
-				<form action="http://localhost:3000/signup" method="POST">
-					<input
-						type="email"
-						name="email"
-						placeholder="Your E(nchanted)mail..."
-						required
-					/>
-					<button type="submit">Join the Circle</button>
-				</form>
-			</div>
-		</section> -->
+			<section class="signup" id="signup">
+				<div class="container">
+					<h2>Receive Exclusive Arcane Deals</h2>
+					<p>
+						Subscribe now and get a coupon for <strong>25% off</strong> your
+						first purchase of rare scrolls or soul gems.
+					</p>
+					<form onsubmit="handleFormSubmit(event)">
+						<label for="email-input">Email Address:</label>
+						<input
+							type="email"
+							id="email-input"
+							name="email"
+							placeholder="Enter your email"
+							required
+						/>
+						<button type="submit" aria-label="Join the Arcane Circle">
+							Join the Circle
+						</button>
+					</form>
+				</div>
+			</section>
 
-		<section class="signup" id="signup">
-			<div class="container">
-				<h2>Receive Exclusive Arcane Deals</h2>
-				<p>
-					Subscribe now and get a coupon for <strong>25% off</strong> your first
-					purchase of rare scrolls or soul gems.
-				</p>
-				<form onsubmit="handleFormSubmit(event)">
-					<input
-						type="email"
-						name="email"
-						placeholder="Your E(nchanted)mail..."
-						required
-					/>
-					<button type="submit">Join the Circle</button>
-				</form>
-			</div>
-		</section>
-
-		<section class="testimonials">
-			<div class="container">
-				<h2>Traveler Tales</h2>
-				<blockquote>
-					“Calindil’s Hands of the Atronach saved me from certain doom!”<br />—
-					Arch-Mage Aranwen
-				</blockquote>
-				<blockquote>
-					“Aurelinwae’s candles lit the way through Frostcrag’s darkest
-					halls.”<br />— Thane Rendar
-				</blockquote>
-			</div>
-		</section>
+			<section class="testimonials">
+				<div class="container">
+					<h2>Traveler Tales</h2>
+					<blockquote>
+						“Calindil’s Hands of the Atronach saved me from certain doom!”<br />
+						<cite>— Arch-Mage Aranwen</cite>
+					</blockquote>
+					<blockquote>
+						“Aurelinwae’s candles lit the way through Frostcrag’s darkest
+						halls.”<br />
+						<cite>— Thane Rendar</cite>
+					</blockquote>
+				</div>
+			</section>
+		</main>
 
 		<footer>
 			<div class="container">
 				<nav>
-					<a href="#">Home</a>
-					<a href="#">Artifacts</a>
-					<a href="#">Quests</a>
-					<a href="#">Contact</a>
+					<a href="#" aria-label="Home page">Home</a>
+					<a href="#" aria-label="View artifacts">Artifacts</a>
+					<a href="#" aria-label="Explore quests">Quests</a>
+					<a href="#" aria-label="Contact us">Contact</a>
 				</nav>
-				<p>&copy; 2025 Mystic Emporium. All rights reserved.</p>
+				<p>© 2025 Mystic Emporium. All rights reserved.</p>
 			</div>
 		</footer>
 	</body>
